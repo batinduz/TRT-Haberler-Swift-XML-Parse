@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6823B066-10FB-44BB-A83E-91BB3DC5B023</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Haberler</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A6CED960652D34573E8B8E5F33FD85039FFE4989</key>
+		<string>github.com:batinduz/Haberler.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Haberler.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A6CED960652D34573E8B8E5F33FD85039FFE4989</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:batinduz/Haberler.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A6CED960652D34573E8B8E5F33FD85039FFE4989</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A6CED960652D34573E8B8E5F33FD85039FFE4989</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Haberler</string>
+		</dict>
+	</array>
+</dict>
+</plist>

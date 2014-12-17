@@ -14,6 +14,9 @@
 		521E1EFA1A3C34AE00D430FC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 521E1EF91A3C34AE00D430FC /* Images.xcassets */; };
 		521E1EFD1A3C34AE00D430FC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 521E1EFB1A3C34AE00D430FC /* LaunchScreen.xib */; };
 		521E1F091A3C34AE00D430FC /* HaberlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E1F081A3C34AE00D430FC /* HaberlerTests.swift */; };
+		521E1F151A3C44DD00D430FC /* BlogPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E1F141A3C44DD00D430FC /* BlogPost.swift */; };
+		521E1F191A3C7A7200D430FC /* GundemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E1F181A3C7A7200D430FC /* GundemTableViewCell.swift */; };
+		5280A12B1A40D6E900C2DB1D /* HavaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5280A12A1A40D6E900C2DB1D /* HavaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		521E1F021A3C34AE00D430FC /* HaberlerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaberlerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		521E1F071A3C34AE00D430FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		521E1F081A3C34AE00D430FC /* HaberlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaberlerTests.swift; sourceTree = "<group>"; };
+		521E1F141A3C44DD00D430FC /* BlogPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogPost.swift; sourceTree = "<group>"; };
+		521E1F181A3C7A7200D430FC /* GundemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GundemTableViewCell.swift; sourceTree = "<group>"; };
+		5280A12A1A40D6E900C2DB1D /* HavaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HavaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,9 @@
 		521E1EE21A3C34AE00D430FC = {
 			isa = PBXGroup;
 			children = (
+				5280A12A1A40D6E900C2DB1D /* HavaViewController.swift */,
+				521E1F181A3C7A7200D430FC /* GundemTableViewCell.swift */,
+				521E1F141A3C44DD00D430FC /* BlogPost.swift */,
 				521E1EED1A3C34AE00D430FC /* Haberler */,
 				521E1F051A3C34AE00D430FC /* HaberlerTests */,
 				521E1EEC1A3C34AE00D430FC /* Products */,
@@ -215,9 +224,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				521E1F191A3C7A7200D430FC /* GundemTableViewCell.swift in Sources */,
 				521E1EF51A3C34AE00D430FC /* SecondViewController.swift in Sources */,
+				5280A12B1A40D6E900C2DB1D /* HavaViewController.swift in Sources */,
 				521E1EF11A3C34AE00D430FC /* AppDelegate.swift in Sources */,
 				521E1EF31A3C34AE00D430FC /* FirstViewController.swift in Sources */,
+				521E1F151A3C44DD00D430FC /* BlogPost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +421,7 @@
 				521E1F0E1A3C34AE00D430FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		521E1F0F1A3C34AE00D430FC /* Build configuration list for PBXNativeTarget "HaberlerTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +430,7 @@
 				521E1F111A3C34AE00D430FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
