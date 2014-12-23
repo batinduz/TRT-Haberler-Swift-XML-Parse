@@ -5,7 +5,6 @@
 //  Created by Batin DUZ on 16.12.2014.
 //  Copyright (c) 2014 Batin DUZ. All rights reserved.
 //
-
 import UIKit
 
 class HavaViewController: UIViewController {
@@ -13,6 +12,9 @@ class HavaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         NSLog("hava durumu")
+        
+        
+        
         // Do any additional setup after loading the view.
     }
 

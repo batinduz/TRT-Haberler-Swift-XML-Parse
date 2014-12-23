@@ -44,6 +44,9 @@ class FirstViewController: UIViewController,  UITableViewDataSource, UITableView
             self.ImageData.append("\(postImage)")
 
             postTitle = String()
+            postImage = String()
+
+        
         }
     }
     
@@ -51,11 +54,11 @@ class FirstViewController: UIViewController,  UITableViewDataSource, UITableView
         let data = string.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
         if (!data.isEmpty) {
             if eName == "baslik" {
-                NSLog(data)
+              //  NSLog(data)
                 postTitle += data
             }
             if eName == "resimpath" {
-                NSLog(data)
+                //NSLog(data)
                 postImage += data
             }
         }
@@ -68,16 +71,13 @@ class FirstViewController: UIViewController,  UITableViewDataSource, UITableView
         return tableData.count
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+       
         var cell : GundemTableViewCell = tableView.dequeueReusableCellWithIdentifier("mycell") as GundemTableViewCell
     
         cell.setCell(tableData[indexPath.row],  image: ImageData[indexPath.row]);
         
-    
-        
-        //cell.setCell(self.tableData[indexPath.row], Image: "test.jpg")
-        //cell.titleLabel.text = "deneme"
-       //cell.textLabel?.text = self.tableData[indexPath.row]
-       // cell.textLabel?.text = "deneme+"
+     
+
 
         return cell
     }

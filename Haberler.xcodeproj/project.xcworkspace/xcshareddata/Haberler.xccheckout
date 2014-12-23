@@ -10,6 +10,8 @@
 	<string>Haberler</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>3AE8ED2E684071AF4FB151FA51BF266B82FF45BD</key>
+		<string>github.com:stephencelis/SQLite.swift.git</string>
 		<key>A6CED960652D34573E8B8E5F33FD85039FFE4989</key>
 		<string>github.com:batinduz/Haberler.git</string>
 	</dict>
@@ -17,6 +19,8 @@
 	<string>Haberler.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>3AE8ED2E684071AF4FB151FA51BF266B82FF45BD</key>
+		<string>../../../Downloads/ExampleProjects/SQLite.swift</string>
 		<key>A6CED960652D34573E8B8E5F33FD85039FFE4989</key>
 		<string>../..</string>
 	</dict>
@@ -35,6 +39,14 @@
 			<string>A6CED960652D34573E8B8E5F33FD85039FFE4989</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Haberler</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3AE8ED2E684071AF4FB151FA51BF266B82FF45BD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SQLite.swift</string>
 		</dict>
 	</array>
 </dict>
