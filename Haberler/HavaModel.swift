@@ -6,15 +6,13 @@
 //  Copyright (c) 2014 Batin DUZ. All rights reserved.
 //
 
-import Foundation
 
-struct HavaModel {
-    var sehir : String
-    var gun: GunModel
-}
-struct GunModel {
-    var tarih : String
-    var endusuk: String
-    var enyuksek: String
-    var durum: String
+import Foundation
+import CoreData
+
+class TaskModel: NSManagedObject {
+    
+    @NSManaged var sehir: String
+
+    
 }

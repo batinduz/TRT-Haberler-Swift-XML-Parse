@@ -9,10 +9,12 @@
 import UIKit
 
 class HavaDetayViewController: UIViewController {
-
+   // var detailHavaModel: HavaModel!
+    var selectcity: String = String()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+println(selectcity)
         // Do any additional setup after loading the view.
     }
 

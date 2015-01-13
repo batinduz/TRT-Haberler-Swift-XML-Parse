@@ -11,14 +11,16 @@ import CoreData
 
 class HavaViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
     @IBOutlet var havatableView: UITableView!
+    
+    var cities = [String]()
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
         self.havatableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cellIdentifier")
         havatableView.dataSource = self
         havatableView.delegate = self
-
         // XMl Parse
         let url = NSURL(string: "http://haberftp.trt.net.tr/haberservis/havadurumu.aspx")
         let data = NSData(contentsOfURL: url!)
@@ -48,6 +50,9 @@ class HavaViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         }
 
+        
+        
+        
      self.loadData()
         
         
@@ -101,9 +106,10 @@ class HavaViewController: UIViewController, UITableViewDataSource, UITableViewDe
         var results: NSArray = context.executeFetchRequest(request, error: nil)!
         if results.count>0 {
             
-            for res in results {
-            //    println(res)
-            }
+            for result in results {
+                var res = result as NSManagedObject
+                let city = res.valueForKey("sehir") as String
+                cities.append("\(city)")            }
             
         }else {
             println("sonuc yok")
@@ -151,22 +157,25 @@ class HavaViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         return cell
     }
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-      println("click")
-        println(indexPath.row)
-     performSegueWithIdentifier("showHavaDetay", sender: self)
-    }
+    
     
     override  func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showHavaDetay" {
             let detailVC: HavaDetayViewController = segue.destinationViewController as HavaDetayViewController
-        //    let indexPath = self.tableView.indexPathForSelectedRow()
-            //        let thisTask = taskArray[indexPath!.row]
-            //   detailVC.detailTaskModel = thisTask
-      
+           let indexPath = self.havatableView.indexPathForSelectedRow()
+                    let thisCity = cities[indexPath!.row]
+               detailVC.selectcity = thisCity
+            
         }
         
     }
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+      println("click")
+        println(indexPath.row)
+      performSegueWithIdentifier("showHavaDetay", sender: self)
+    }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
