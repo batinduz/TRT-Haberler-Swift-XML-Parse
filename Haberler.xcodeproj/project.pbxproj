@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		521089221A42E2CF00E0190E /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521089211A42E2CF00E0190E /* ImageLoader.swift */; };
-		521089341A43082F00E0190E /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5210892B1A4307B000E0190E /* SQLite.framework */; };
 		521E1EF11A3C34AE00D430FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E1EF01A3C34AE00D430FC /* AppDelegate.swift */; };
 		521E1EF31A3C34AE00D430FC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E1EF21A3C34AE00D430FC /* FirstViewController.swift */; };
 		521E1EF51A3C34AE00D430FC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E1EF41A3C34AE00D430FC /* SecondViewController.swift */; };
@@ -17,48 +16,19 @@
 		521E1EFD1A3C34AE00D430FC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 521E1EFB1A3C34AE00D430FC /* LaunchScreen.xib */; };
 		521E1F091A3C34AE00D430FC /* HaberlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E1F081A3C34AE00D430FC /* HaberlerTests.swift */; };
 		521E1F191A3C7A7200D430FC /* GundemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E1F181A3C7A7200D430FC /* GundemTableViewCell.swift */; };
-		5280A12B1A40D6E900C2DB1D /* HavaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5280A12A1A40D6E900C2DB1D /* HavaViewController.swift */; };
+		5288ABD91A54A5DC00E2C987 /* SWXMLHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5288ABD81A54A5DC00E2C987 /* SWXMLHash.swift */; };
+		5288AC161A557DDC00E2C987 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5288AC141A557DDC00E2C987 /* CoreData.xcdatamodeld */; };
+		52B3D6DA1A55932E00365FA4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5288AC121A557B8E00E2C987 /* CoreData.framework */; };
 		52B892D21A49792400717E7C /* SporTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B892D11A49792400717E7C /* SporTableViewCell.swift */; };
 		52B892D81A498D5400717E7C /* DovizTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B892D71A498D5400717E7C /* DovizTableViewCell.swift */; };
 		52B892DD1A498D8400717E7C /* DovizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B892DC1A498D8400717E7C /* DovizViewController.swift */; };
+		52B892E01A49BEB700717E7C /* HavaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B892DF1A49BEB700717E7C /* HavaTableViewCell.swift */; };
+		52B892E71A49C63700717E7C /* HavaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B892E61A49C63700717E7C /* HavaModel.swift */; };
+		52E3C4051A5587C100B2FAB1 /* HavaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E3C4041A5587C100B2FAB1 /* HavaViewController.swift */; };
+		52F09E511A55E01500BA9C4C /* HavaDetayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F09E501A55E01500BA9C4C /* HavaDetayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5210892A1A4307B000E0190E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 521089231A4307AF00E0190E /* SQLite.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DC3773F319C8CBB3004FCF85;
-			remoteInfo = "SQLite iOS";
-		};
-		5210892C1A4307B000E0190E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 521089231A4307AF00E0190E /* SQLite.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DC3773FE19C8CBB3004FCF85;
-			remoteInfo = "SQLite iOS Tests";
-		};
-		5210892E1A4307B000E0190E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 521089231A4307AF00E0190E /* SQLite.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DC37741419C8CC2F004FCF85;
-			remoteInfo = "SQLite Mac";
-		};
-		521089301A4307B000E0190E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 521089231A4307AF00E0190E /* SQLite.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DC37741E19C8CC2F004FCF85;
-			remoteInfo = "SQLite Mac Tests";
-		};
-		521089321A43081E00E0190E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 521089231A4307AF00E0190E /* SQLite.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = DC3773F219C8CBB3004FCF85;
-			remoteInfo = "SQLite iOS";
-		};
 		521E1F031A3C34AE00D430FC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 521E1EE31A3C34AE00D430FC /* Project object */;
@@ -70,7 +40,6 @@
 
 /* Begin PBXFileReference section */
 		521089211A42E2CF00E0190E /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
-		521089231A4307AF00E0190E /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = ../../Downloads/ExampleProjects/SQLite.swift/SQLite.xcodeproj; sourceTree = "<group>"; };
 		521E1EEB1A3C34AE00D430FC /* Haberler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Haberler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		521E1EEF1A3C34AE00D430FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		521E1EF01A3C34AE00D430FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,10 +52,16 @@
 		521E1F071A3C34AE00D430FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		521E1F081A3C34AE00D430FC /* HaberlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaberlerTests.swift; sourceTree = "<group>"; };
 		521E1F181A3C7A7200D430FC /* GundemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GundemTableViewCell.swift; sourceTree = "<group>"; };
-		5280A12A1A40D6E900C2DB1D /* HavaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HavaViewController.swift; sourceTree = "<group>"; };
+		5288ABD81A54A5DC00E2C987 /* SWXMLHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SWXMLHash.swift; path = ../SWXMLHash.swift; sourceTree = "<group>"; };
+		5288AC121A557B8E00E2C987 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5288AC151A557DDC00E2C987 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
 		52B892D11A49792400717E7C /* SporTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SporTableViewCell.swift; sourceTree = "<group>"; };
 		52B892D71A498D5400717E7C /* DovizTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DovizTableViewCell.swift; sourceTree = "<group>"; };
 		52B892DC1A498D8400717E7C /* DovizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DovizViewController.swift; sourceTree = "<group>"; };
+		52B892DF1A49BEB700717E7C /* HavaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HavaTableViewCell.swift; sourceTree = "<group>"; };
+		52B892E61A49C63700717E7C /* HavaModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HavaModel.swift; sourceTree = "<group>"; };
+		52E3C4041A5587C100B2FAB1 /* HavaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HavaViewController.swift; sourceTree = "<group>"; };
+		52F09E501A55E01500BA9C4C /* HavaDetayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HavaDetayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				521089341A43082F00E0190E /* SQLite.framework in Frameworks */,
+				52B3D6DA1A55932E00365FA4 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,28 +83,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		521089241A4307AF00E0190E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5210892B1A4307B000E0190E /* SQLite.framework */,
-				5210892D1A4307B000E0190E /* SQLite iOS Tests.xctest */,
-				5210892F1A4307B000E0190E /* SQLite.framework */,
-				521089311A4307B000E0190E /* SQLite Mac Tests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		521E1EE21A3C34AE00D430FC = {
 			isa = PBXGroup;
 			children = (
-				5280A12A1A40D6E900C2DB1D /* HavaViewController.swift */,
+				5288AC141A557DDC00E2C987 /* CoreData.xcdatamodeld */,
+				5288AC121A557B8E00E2C987 /* CoreData.framework */,
 				521E1F181A3C7A7200D430FC /* GundemTableViewCell.swift */,
 				52B892D11A49792400717E7C /* SporTableViewCell.swift */,
 				521089211A42E2CF00E0190E /* ImageLoader.swift */,
 				521E1EED1A3C34AE00D430FC /* Haberler */,
 				521E1F051A3C34AE00D430FC /* HaberlerTests */,
 				521E1EEC1A3C34AE00D430FC /* Products */,
-				521089231A4307AF00E0190E /* SQLite.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,11 +110,16 @@
 			isa = PBXGroup;
 			children = (
 				521E1EF01A3C34AE00D430FC /* AppDelegate.swift */,
+				5288ABD81A54A5DC00E2C987 /* SWXMLHash.swift */,
 				521E1EF21A3C34AE00D430FC /* FirstViewController.swift */,
 				521E1EF41A3C34AE00D430FC /* SecondViewController.swift */,
 				52B892D71A498D5400717E7C /* DovizTableViewCell.swift */,
 				52B892DC1A498D8400717E7C /* DovizViewController.swift */,
 				521E1EF61A3C34AE00D430FC /* Main.storyboard */,
+				52F09E501A55E01500BA9C4C /* HavaDetayViewController.swift */,
+				52E3C4041A5587C100B2FAB1 /* HavaViewController.swift */,
+				52B892E61A49C63700717E7C /* HavaModel.swift */,
+				52B892DF1A49BEB700717E7C /* HavaTableViewCell.swift */,
 				521E1EF91A3C34AE00D430FC /* Images.xcassets */,
 				521E1EFB1A3C34AE00D430FC /* LaunchScreen.xib */,
 				521E1EEE1A3C34AE00D430FC /* Supporting Files */,
@@ -197,7 +166,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				521089331A43081E00E0190E /* PBXTargetDependency */,
 			);
 			name = Haberler;
 			productName = Haberler;
@@ -233,6 +201,7 @@
 				TargetAttributes = {
 					521E1EEA1A3C34AE00D430FC = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 33E68CD9YA;
 					};
 					521E1F011A3C34AE00D430FC = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -251,12 +220,6 @@
 			mainGroup = 521E1EE21A3C34AE00D430FC;
 			productRefGroup = 521E1EEC1A3C34AE00D430FC /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 521089241A4307AF00E0190E /* Products */;
-					ProjectRef = 521089231A4307AF00E0190E /* SQLite.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				521E1EEA1A3C34AE00D430FC /* Haberler */,
@@ -264,37 +227,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		5210892B1A4307B000E0190E /* SQLite.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SQLite.framework;
-			remoteRef = 5210892A1A4307B000E0190E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		5210892D1A4307B000E0190E /* SQLite iOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "SQLite iOS Tests.xctest";
-			remoteRef = 5210892C1A4307B000E0190E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		5210892F1A4307B000E0190E /* SQLite.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SQLite.framework;
-			remoteRef = 5210892E1A4307B000E0190E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		521089311A4307B000E0190E /* SQLite Mac Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "SQLite Mac Tests.xctest";
-			remoteRef = 521089301A4307B000E0190E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		521E1EE91A3C34AE00D430FC /* Resources */ = {
@@ -322,13 +254,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				521089221A42E2CF00E0190E /* ImageLoader.swift in Sources */,
+				5288ABD91A54A5DC00E2C987 /* SWXMLHash.swift in Sources */,
+				52B892E71A49C63700717E7C /* HavaModel.swift in Sources */,
+				52B892E01A49BEB700717E7C /* HavaTableViewCell.swift in Sources */,
+				52F09E511A55E01500BA9C4C /* HavaDetayViewController.swift in Sources */,
 				521E1F191A3C7A7200D430FC /* GundemTableViewCell.swift in Sources */,
 				52B892D81A498D5400717E7C /* DovizTableViewCell.swift in Sources */,
 				521E1EF51A3C34AE00D430FC /* SecondViewController.swift in Sources */,
-				5280A12B1A40D6E900C2DB1D /* HavaViewController.swift in Sources */,
 				52B892DD1A498D8400717E7C /* DovizViewController.swift in Sources */,
+				5288AC161A557DDC00E2C987 /* CoreData.xcdatamodeld in Sources */,
 				521E1EF11A3C34AE00D430FC /* AppDelegate.swift in Sources */,
 				52B892D21A49792400717E7C /* SporTableViewCell.swift in Sources */,
+				52E3C4051A5587C100B2FAB1 /* HavaViewController.swift in Sources */,
 				521E1EF31A3C34AE00D430FC /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,11 +281,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		521089331A43081E00E0190E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "SQLite iOS";
-			targetProxy = 521089321A43081E00E0190E /* PBXContainerItemProxy */;
-		};
 		521E1F041A3C34AE00D430FC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 521E1EEA1A3C34AE00D430FC /* Haberler */;
@@ -538,6 +470,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5288AC141A557DDC00E2C987 /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5288AC151A557DDC00E2C987 /* CoreData.xcdatamodel */,
+			);
+			currentVersion = 5288AC151A557DDC00E2C987 /* CoreData.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 521E1EE31A3C34AE00D430FC /* Project object */;
 }

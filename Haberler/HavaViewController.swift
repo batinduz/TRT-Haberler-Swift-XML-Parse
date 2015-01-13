@@ -2,93 +2,177 @@
 //  HavaViewController.swift
 //  Haberler
 //
-//  Created by Batin DUZ on 16.12.2014.
-//  Copyright (c) 2014 Batin DUZ. All rights reserved.
+//  Created by Batin DUZ on 1.01.2015.
+//  Copyright (c) 2015 Batin DUZ. All rights reserved.
 //
 
 import UIKit
+import CoreData
 
-let reuseIdentifier = "Cell"
-
-class HavaViewController: UIViewController {
+class HavaViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
+    @IBOutlet var havatableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        NSLog("hava durumu")
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+    
+        self.havatableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cellIdentifier")
+        havatableView.dataSource = self
+        havatableView.delegate = self
 
-        // Register cell classes
-        self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        // XMl Parse
+        let url = NSURL(string: "http://haberftp.trt.net.tr/haberservis/havadurumu.aspx")
+        let data = NSData(contentsOfURL: url!)
+     //   println(data)
+        if(data != nil){
+        let dataxml = NSString(data:data!, encoding: NSUTF8StringEncoding)
+        let xml = SWXMLHash.parse(dataxml!)
+    //  println(xml["HavaTahmini"]["Merkez"][4].element?.attributes["MerkezAdi"])
+     //   println(xml["HavaTahmini"]["Merkez"][6].element?.attributes["MerkezAdi"])
+    
+        for merkez in xml["HavaTahmini"]["Merkez"] {
+            var cityName = merkez.element?.attributes["MerkezAdi"]
+         //   println(cityName)
+          // self.newCity(cityName!)
+            for gun in merkez["Gun"] {
+              //  println(gun.element?.attributes["Tarih"])
+                var tarih = gun.element?.attributes["Tarih"]
+                var endusuk = gun["EnDusuk"].element?.text
+                var enyuksek = gun["EnYuksek"].element?.text
+                var durum = gun["DurumuKod"].element?.text
 
+           //    self.newCityWeather(cityName!, tarih: tarih!, endusuk: endusuk!, enyuksek: enyuksek!, durum: durum! )
+
+            }
+        }
+        
+        
+        }
+
+     self.loadData()
+        
+        
+        
+        
+        
+        println("hava")
         // Do any additional setup after loading the view.
     }
+    func newCityWeather(cityName: String, tarih: String, endusuk: String, enyuksek: String, durum: String){
+        
+        var appDel: AppDelegate = (UIApplication.sharedApplication().delegate as AppDelegate )
+        var context: NSManagedObjectContext = appDel.managedObjectContext!
+        var newCity = NSEntityDescription.insertNewObjectForEntityForName("Hava", inManagedObjectContext: context) as NSManagedObject
+        
+        
+        newCity.setValue(cityName, forKey: "sehir")
+        newCity.setValue(tarih, forKey: "tarih")
+        newCity.setValue(endusuk, forKey: "endusuk")
+        newCity.setValue(endusuk, forKey: "enyuksek")
+        newCity.setValue(endusuk, forKey: "endusuk")
+        newCity.setValue(endusuk, forKey: "durum")
 
+        context.save(nil)
+        
+        //  println(newCity)
+        
+        
+    }
+    func newCity(cityName: String){
+    
+        var appDel: AppDelegate = (UIApplication.sharedApplication().delegate as AppDelegate )
+        var context: NSManagedObjectContext = appDel.managedObjectContext!
+        var newCity = NSEntityDescription.insertNewObjectForEntityForName("Sehirler", inManagedObjectContext: context) as NSManagedObject
+        
+        
+        newCity.setValue(cityName, forKey: "sehir")
+        context.save(nil)
+        
+      //  println(newCity)
+        
+
+    }
+    func loadData() {
+        var appDel: AppDelegate = (UIApplication.sharedApplication().delegate as AppDelegate )
+        var context: NSManagedObjectContext = appDel.managedObjectContext!
+        
+        
+        var request = NSFetchRequest(entityName: "Sehirler")
+        request.returnsObjectsAsFaults = false
+        var results: NSArray = context.executeFetchRequest(request, error: nil)!
+        if results.count>0 {
+            
+            for res in results {
+            //    println(res)
+            }
+            
+        }else {
+            println("sonuc yok")
+            
+        }
+        
+        
+    }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 81
+    }
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        var cell : HavaTableViewCell = tableView.dequeueReusableCellWithIdentifier("mycell") as HavaTableViewCell
+        var appDel: AppDelegate = (UIApplication.sharedApplication().delegate as AppDelegate )
+        var context: NSManagedObjectContext = appDel.managedObjectContext!
+        
+        
+        var request = NSFetchRequest(entityName: "Sehirler")
+        request.returnsObjectsAsFaults = false
+        var results: NSArray = context.executeFetchRequest(request, error: nil)!
+        if results.count>0 {
+            var cities = [String]()
+
+            for result in results {
+                 var res = result as NSManagedObject
+                let city = res.valueForKey("sehir") as String
+                cities.append("\(city)")
+            }
+          
+            cell.setCell(cities[indexPath.row])
+ 
+            
+        }
+        
+
+        
+        
+        
+        
+        return cell
+    }
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+      println("click")
+        println(indexPath.row)
+     performSegueWithIdentifier("showHavaDetay", sender: self)
+    }
+    
+    override  func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showHavaDetay" {
+            let detailVC: HavaDetayViewController = segue.destinationViewController as HavaDetayViewController
+        //    let indexPath = self.tableView.indexPathForSelectedRow()
+            //        let thisTask = taskArray[indexPath!.row]
+            //   detailVC.detailTaskModel = thisTask
+      
+        }
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-    // MARK: UICollectionViewDataSource
-
-    override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        //#warning Incomplete method implementation -- Return the number of sections
-        return 0
-    }
-
-
-    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        //#warning Incomplete method implementation -- Return the number of items in the section
-        return 0
-    }
-
-    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as UICollectionViewCell
     
-        // Configure the cell
-    
-        return cell
-    }
 
-    // MARK: UICollectionViewDelegate
-
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(collectionView: UICollectionView, shouldHighlightItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(collectionView: UICollectionView, shouldSelectItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(collectionView: UICollectionView, shouldShowMenuForItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(collectionView: UICollectionView, canPerformAction action: Selector, forItemAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) -> Bool {
-        return false
-    }
-
-    override func collectionView(collectionView: UICollectionView, performAction action: Selector, forItemAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) {
-    
-    }
-    */
 
 }
