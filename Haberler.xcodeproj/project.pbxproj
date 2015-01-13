@@ -16,6 +16,10 @@
 		521E1EFD1A3C34AE00D430FC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 521E1EFB1A3C34AE00D430FC /* LaunchScreen.xib */; };
 		521E1F091A3C34AE00D430FC /* HaberlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E1F081A3C34AE00D430FC /* HaberlerTests.swift */; };
 		521E1F191A3C7A7200D430FC /* GundemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E1F181A3C7A7200D430FC /* GundemTableViewCell.swift */; };
+		522FBB5B1A65787200375076 /* HDetayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522FBB5A1A65787200375076 /* HDetayTableViewCell.swift */; };
+		522FBB5F1A6587E200375076 /* parcalibulutlu.png in Resources */ = {isa = PBXBuildFile; fileRef = 522FBB5C1A6587E100375076 /* parcalibulutlu.png */; };
+		522FBB601A6587E200375076 /* kar.png in Resources */ = {isa = PBXBuildFile; fileRef = 522FBB5D1A6587E200375076 /* kar.png */; };
+		522FBB611A6587E200375076 /* yagisli.png in Resources */ = {isa = PBXBuildFile; fileRef = 522FBB5E1A6587E200375076 /* yagisli.png */; };
 		5288ABD91A54A5DC00E2C987 /* SWXMLHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5288ABD81A54A5DC00E2C987 /* SWXMLHash.swift */; };
 		5288AC161A557DDC00E2C987 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5288AC141A557DDC00E2C987 /* CoreData.xcdatamodeld */; };
 		52B3D6DA1A55932E00365FA4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5288AC121A557B8E00E2C987 /* CoreData.framework */; };
@@ -26,6 +30,7 @@
 		52B892E71A49C63700717E7C /* HavaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B892E61A49C63700717E7C /* HavaModel.swift */; };
 		52E3C4051A5587C100B2FAB1 /* HavaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E3C4041A5587C100B2FAB1 /* HavaViewController.swift */; };
 		52F09E511A55E01500BA9C4C /* HavaDetayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F09E501A55E01500BA9C4C /* HavaDetayViewController.swift */; };
+		52F7370C1A6560EB006F68EB /* HavaDetayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7370B1A6560EB006F68EB /* HavaDetayModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +57,10 @@
 		521E1F071A3C34AE00D430FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		521E1F081A3C34AE00D430FC /* HaberlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaberlerTests.swift; sourceTree = "<group>"; };
 		521E1F181A3C7A7200D430FC /* GundemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GundemTableViewCell.swift; sourceTree = "<group>"; };
+		522FBB5A1A65787200375076 /* HDetayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDetayTableViewCell.swift; sourceTree = "<group>"; };
+		522FBB5C1A6587E100375076 /* parcalibulutlu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = parcalibulutlu.png; sourceTree = "<group>"; };
+		522FBB5D1A6587E200375076 /* kar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kar.png; sourceTree = "<group>"; };
+		522FBB5E1A6587E200375076 /* yagisli.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yagisli.png; sourceTree = "<group>"; };
 		5288ABD81A54A5DC00E2C987 /* SWXMLHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SWXMLHash.swift; path = ../SWXMLHash.swift; sourceTree = "<group>"; };
 		5288AC121A557B8E00E2C987 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		5288AC151A557DDC00E2C987 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
@@ -62,6 +71,7 @@
 		52B892E61A49C63700717E7C /* HavaModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HavaModel.swift; sourceTree = "<group>"; };
 		52E3C4041A5587C100B2FAB1 /* HavaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HavaViewController.swift; sourceTree = "<group>"; };
 		52F09E501A55E01500BA9C4C /* HavaDetayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HavaDetayViewController.swift; sourceTree = "<group>"; };
+		52F7370B1A6560EB006F68EB /* HavaDetayModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HavaDetayModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +96,10 @@
 		521E1EE21A3C34AE00D430FC = {
 			isa = PBXGroup;
 			children = (
+				522FBB5A1A65787200375076 /* HDetayTableViewCell.swift */,
+				522FBB5C1A6587E100375076 /* parcalibulutlu.png */,
+				522FBB5D1A6587E200375076 /* kar.png */,
+				522FBB5E1A6587E200375076 /* yagisli.png */,
 				5288AC141A557DDC00E2C987 /* CoreData.xcdatamodeld */,
 				5288AC121A557B8E00E2C987 /* CoreData.framework */,
 				521E1F181A3C7A7200D430FC /* GundemTableViewCell.swift */,
@@ -119,6 +133,7 @@
 				52F09E501A55E01500BA9C4C /* HavaDetayViewController.swift */,
 				52E3C4041A5587C100B2FAB1 /* HavaViewController.swift */,
 				52B892E61A49C63700717E7C /* HavaModel.swift */,
+				52F7370B1A6560EB006F68EB /* HavaDetayModel.swift */,
 				52B892DF1A49BEB700717E7C /* HavaTableViewCell.swift */,
 				521E1EF91A3C34AE00D430FC /* Images.xcassets */,
 				521E1EFB1A3C34AE00D430FC /* LaunchScreen.xib */,
@@ -233,8 +248,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				522FBB601A6587E200375076 /* kar.png in Resources */,
 				521E1EF81A3C34AE00D430FC /* Main.storyboard in Resources */,
 				521E1EFD1A3C34AE00D430FC /* LaunchScreen.xib in Resources */,
+				522FBB5F1A6587E200375076 /* parcalibulutlu.png in Resources */,
+				522FBB611A6587E200375076 /* yagisli.png in Resources */,
 				521E1EFA1A3C34AE00D430FC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,7 +277,9 @@
 				52B892E01A49BEB700717E7C /* HavaTableViewCell.swift in Sources */,
 				52F09E511A55E01500BA9C4C /* HavaDetayViewController.swift in Sources */,
 				521E1F191A3C7A7200D430FC /* GundemTableViewCell.swift in Sources */,
+				522FBB5B1A65787200375076 /* HDetayTableViewCell.swift in Sources */,
 				52B892D81A498D5400717E7C /* DovizTableViewCell.swift in Sources */,
+				52F7370C1A6560EB006F68EB /* HavaDetayModel.swift in Sources */,
 				521E1EF51A3C34AE00D430FC /* SecondViewController.swift in Sources */,
 				52B892DD1A498D8400717E7C /* DovizViewController.swift in Sources */,
 				5288AC161A557DDC00E2C987 /* CoreData.xcdatamodeld in Sources */,

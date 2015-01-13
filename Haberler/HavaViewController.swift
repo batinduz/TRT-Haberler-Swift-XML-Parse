@@ -34,15 +34,14 @@ class HavaViewController: UIViewController, UITableViewDataSource, UITableViewDe
         for merkez in xml["HavaTahmini"]["Merkez"] {
             var cityName = merkez.element?.attributes["MerkezAdi"]
          //   println(cityName)
-          // self.newCity(cityName!)
+//self.newCity(cityName!)
             for gun in merkez["Gun"] {
               //  println(gun.element?.attributes["Tarih"])
                 var tarih = gun.element?.attributes["Tarih"]
                 var endusuk = gun["EnDusuk"].element?.text
                 var enyuksek = gun["EnYuksek"].element?.text
                 var durum = gun["DurumuKod"].element?.text
-
-           //    self.newCityWeather(cityName!, tarih: tarih!, endusuk: endusuk!, enyuksek: enyuksek!, durum: durum! )
+             // self.newCityWeather(cityName!, tarih: tarih!, endusuk: endusuk!, enyuksek: enyuksek!, durum: durum! )
 
             }
         }
@@ -74,7 +73,7 @@ class HavaViewController: UIViewController, UITableViewDataSource, UITableViewDe
         newCity.setValue(endusuk, forKey: "endusuk")
         newCity.setValue(endusuk, forKey: "enyuksek")
         newCity.setValue(endusuk, forKey: "endusuk")
-        newCity.setValue(endusuk, forKey: "durum")
+        newCity.setValue(durum, forKey: "durum")
 
         context.save(nil)
         
